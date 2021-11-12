@@ -19,6 +19,7 @@ header{
     background-color: #0FDDCC;
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 header div{
     display: flex;
@@ -34,7 +35,131 @@ header div img{
     font-weight: bold;
     text-decoration: none;
     padding: 0 20px;
+    transition: .3s ease-in-out;
 }
 .links-top a:hover{
     color: #77787C;
+    transition: .3s ease-in-out;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.container-section-banner img{
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.container-section-banner h1{
+    text-transform: uppercase;
+    text-align: left;
+    position: absolute;
+    font-size: 2em;
+    bottom: 300px;
+    left: 30px;
+    color: #fff;
+}
+
+
+.container-section-about{
+    margin: 5px;
+}
+.container-section-about p{
+    width: 600px;
+    margin: 15px 0 30px;
+}
+
+
+.container-section-list{
+    display: flex;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.container-section-list div{
+    margin: 0 30px;  
+}
+.container-list h2{
+    margin: 15px; 
+}
+.container-list ul li{
+    margin: 5px 30px;  
+}
+
+
+.container-section-specialties{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.container-specialties, 
+.container-specialties p{
+    margin: 15px;
+}
+.container-figcaption{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-figcaption div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 2px #77787C;
+    margin: 15px;
+}
+.container-figcaption div p{
+    padding: 10px;
+}
+.container-figcaption img{
+    width: 300px;
+    border-radius: 5px 5px 0 0;
+}
+.container-specialties-button{
+    margin: 30px;
+    font-weight: bold;
+}
+.container-specialties-button a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #0FDDCC;
+    padding: 10px 15px;
+    transition: .3s ease-in-out;
+}
+.container-specialties-button a:hover{
+    background-color: #0D6E71;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+
+.container-section-contact{
+    margin: 30px 0 75px;
+}
+.container-section-contact h3{
+    margin: 10px;
+}
+.container-section-contact p{
+    padding: 3px;
+}
+.container-section-contact iframe{
+    padding-top: 30px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #0D6E71;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 25px 0;
+    color: #fff;
+}
+footer div p{
+    padding: 3px;
 }
